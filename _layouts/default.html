@@ -3,9 +3,14 @@
     <title>{{ page.title }}</title>
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@hthorhalls">
+    <meta name="twitter:title" content='{{ page.title }}'>
+    <meta property="og:type" content="article" />
     {% if page.subtitle %}
         <meta name='description' content='{{ page.subtitle }}'>
         <meta property='og:description' content='{{ page.subtitle }}'>
+        <meta name='twitter:description' content='{{ page.subtitle }}'>
     {% else %}
         <meta name='description' content='Halldor Thorhallsson is a Machine Learning Engineer'>
         <meta property='og:description' content='Halldor Thorhallsson is a Machine Learning Engineer'>
@@ -13,6 +18,7 @@
 
     {% if page.og_image %}
         <meta property='og:image' content='{{ site.url }}{{ page.og_image }}'>
+        <meta name='twitter:image' content='{{ site.url }}{{ page.og_image }}'>
     {% else %}
         <meta property='og:image' content='{{ site.url }}/favicon.ico'>
     {% endif %}
