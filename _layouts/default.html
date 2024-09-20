@@ -3,8 +3,21 @@
     <title>{{ page.title }}</title>
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    {% if page.subtitle %}
+        <meta name='description' content='{{ page.subtitle }}'>
+        <meta name='og:description' content='{{ page.subtitle }}'>
+    {% else %}
+        <meta name='description' content='Halldor Thorhallsson is a Machine Learning Engineer'>
+        <meta name='og:description' content='Halldor Thorhallsson is a Machine Learning Engineer'>
+    {% endif %}
 
-    <meta name='description' content='Halldor Thorhallsson is a Machine Learning Engineer'>
+    {% if page.og_image %}
+        <meta name='og:image' content='{{ page.og_image }}'>
+    {% else %}
+        <meta name='og:image' content='/assets'>
+    {% endif %}
+
+
     <meta name='keywords' content='{{ page.keywords }}'>
     <meta name='author' content='Halldor Thorhallsson'>
 
