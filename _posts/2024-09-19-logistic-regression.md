@@ -1,17 +1,17 @@
 ---
 title:  "Logistic regression from scratch"
-subtitle: We derive logistic regression from semi-first principles using only our knowledge of linear regression, some basic probability and statistics, a dash of calculus and our good old intuition. 
+subtitle: We derive logistic regression from semi-first principles using only our knowledge of linear regression, some basic probability and statistics, a dash of calculus and our good old intuition.
 og_image: /assets/img/logistic_boundary-200-iterations.png
 keywords: Machine learning, Probability and statistics
 layout: default
 ---
 
 {% katexmm %}
-
 #### Outlining the problem 
-
 We have $n$ observations of $d$ dimensional data $\boldsymbol{x} = (x_1, x_2, ... x_d)$. For each observation $\boldsymbol{x^i}$ we have a corresponding label $y^i \in \{0, 1\}$. Now, we want to build a model that can predict a label given some unseen observation $\boldsymbol{x^k}$. Essentially we want to find a function that can model the following probability accurately
+{% endkatexmm %}
 
+{% katexmm %}
 $$P(Y=y | X = \boldsymbol{x^k}) $$
 
 

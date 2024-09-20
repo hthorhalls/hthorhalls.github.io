@@ -5,19 +5,18 @@
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     {% if page.subtitle %}
         <meta name='description' content='{{ page.subtitle }}'>
-        <meta name='og:description' content='{{ page.subtitle }}'>
+        <meta property='og:description' content='{{ page.subtitle }}'>
     {% else %}
         <meta name='description' content='Halldor Thorhallsson is a Machine Learning Engineer'>
-        <meta name='og:description' content='Halldor Thorhallsson is a Machine Learning Engineer'>
+        <meta property='og:description' content='Halldor Thorhallsson is a Machine Learning Engineer'>
     {% endif %}
 
     {% if page.og_image %}
-        <meta name='og:image' content='{{ page.og_image }}'>
+        <meta property='og:image' content='{{ site.url }}{{ page.og_image }}'>
     {% else %}
-        <meta name='og:image' content='/assets'>
+        <meta property='og:image' content='{{ site.url }}/favicon.ico'>
     {% endif %}
-
-
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
     <meta name='keywords' content='{{ page.keywords }}'>
     <meta name='author' content='Halldor Thorhallsson'>
 
