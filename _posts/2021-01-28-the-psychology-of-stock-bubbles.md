@@ -1,6 +1,7 @@
 ---
 title:  "The Psychology of Stock Bubbles"
 layout: default
+keywords: Economics 
 ---
 
 

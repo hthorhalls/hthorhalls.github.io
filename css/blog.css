@@ -216,3 +216,66 @@ footer {
   font-size: 10px;
   margin-top: 40px;
 }
+
+.multifig {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+
+  figure {
+    margin: 0;
+  }
+}
+
+.footnotes {
+  font-size: 12px;
+}
+
+.multifig {
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#projects {
+  line-height: 1.5em;
+  margin-top: 83px;
+
+  p {
+    margin: 0;
+  }
+}
+
+#projects .page-title {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+#projects .page-subtitle {
+  font-size: 14px;
+}
+
+
+#projects .links {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  
+
+  li {
+    display: inline;
+    padding-right: 10px;
+  }
+
+  a { 
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
