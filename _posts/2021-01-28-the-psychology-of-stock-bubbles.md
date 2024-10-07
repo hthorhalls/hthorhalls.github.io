@@ -1,7 +1,8 @@
 ---
 title:  "The Psychology of Stock Bubbles"
 layout: default
-keywords: Economics 
+keywords: Economics
+subtitle: We explore the psychological factors that create and reinforce stock bubbles. 
 ---
 
 

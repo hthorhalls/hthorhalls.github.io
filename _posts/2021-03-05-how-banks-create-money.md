@@ -2,7 +2,7 @@
 title:  "How Banks Create Money"
 header:
   og_image: /assets/img/bank_run.png
-subtitle: "A very common view on banking can be summarized by the following statement: Banks accept deposits from savers and then loan those deposits out to borrowers. This is a fundamental misunderstanding of how banking really works."
+subtitle: An overview of how credit works in the banking system and the dangers it poses. 
 layout: default
 keywords: Economics
 ---
