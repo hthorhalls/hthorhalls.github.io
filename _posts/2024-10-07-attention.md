@@ -1,7 +1,7 @@
 ---
 title:  "The intuition behind self-attention"
 subtitle: We explore the inner workings of self-attention, the core mechanism of Transformers, from a conceptual point of view. 
-og_image: /assets/img/embedding-infusion.png
+og_image: /assets/img/embedding-infusion-v2.png
 keywords: Machine learning
 layout: default
 ---
