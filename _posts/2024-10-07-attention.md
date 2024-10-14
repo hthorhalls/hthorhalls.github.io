@@ -58,7 +58,7 @@ But how can we make our embeddings communicate with each other? Remember, a toke
 
 ## Contextual embeddings
 
-This is where **attention** comes in. It is simply a mechanism for figuring out how the embedding of each token changes when it takes into account the tokens before it. The name attention comes from the idea that preceding tokens *attend* to successive tokens. Basically we want to compute **contextual embeddings** from our raw token embeddings. 
+This is where **attention** comes in. It is simply a mechanism for figuring out how the embedding of each token changes when it takes into account the tokens before it. The name attention comes from the idea that tokens *attend to* or *pay attention to* preceding tokens in the context. Basically we want to compute **contextual embeddings** from our raw token embeddings. 
 
 Consider the example: 
 
@@ -98,7 +98,7 @@ Identically to the query we define a linear transformation $W_K$ that takes a to
 
 {% include image.html url="/assets/img/q-k-space.svg" description="Example of a query and key vector in a d=2 space"  width="100%"%}
 
-Given these vectors, how do we calculate our *attention score*, or how well each token answers each query? There is no shortage of similarity functions to choose from. However, transformers specifically use the **dot product** to compute this similarity. Let's denote how well a token $i$ attends to the token *shining* with $a_i$. We can now formulate how well the token *knight* attends to the token *shining*: 
+Given these vectors, how do we calculate our *attention score*, or how well each token answers each query? There is no shortage of similarity functions to choose from. However, transformers specifically use the **dot product** to compute this similarity. Let's denote how well the token *shining* attends to a token $i$ with $a_i$. We can now formulate how well the token *shining* attends to the token *knight*: 
 
 $$ a_{knight} = q^T_{shining} k_{knight} = (W_q x_{shining})^T (W_k x_{knight}) $$
 
